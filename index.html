@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!-- Responsividade -->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!-- Pop-up -->
+    <link rel="stylesheet" href="style/popup.css">
+
+    <!-- Carrossel -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <title>RogueFlix</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ROGUEFLIX</h1>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Coleções</a>
+                <a href="#">Tutoriais</a>
+                <a href="#">Contato</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="jogo-principal">
+            <div class="info">
+                <h2 class="nome-jogo">HADES</h2>
+                <p class="descricao">Desafie o deus dos mortos enquanto você batalha para sair do Submundo neste jogo dos mesmos criadores de Bastion, Transistor e Pyre.</p>
+            </div>
+            <div class="botoes">
+                <a href="#"><button role="button" class="botao">Jogue agora</button></a>
+                <a href="#"><button role="button" class="botao">Requisitos</button></a>
+            </div>
+        </div>
+    </main>
+    <h2 class="nome-carrossel">Adicionados recentemente</h2>
+    <div class="carrossel-jogos">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <a href="javascript:;" onclick="abrir('popup-morta')"><img src="style/img/add/capa-morta.jpg" class="img-jogo"></a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" onclick="abrir('popup-deadcells')"><img src="style/img/add/capa-deadcells.jpg" class="img-jogo"></a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" onclick="abrir('popup-spelunky2')"><img src="style/img/add/capa-spelunky2.jpg" class="img-jogo"></a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" onclick="abrir('popup-spire')"><img src="style/img/add/capa-spire.jpg" class="img-jogo"></a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" onclick="abrir('popup-risk2')"><img src="style/img/add/capa-risk2.jpg" class="img-jogo"></a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" onclick="abrir('popup-necrodancer')"><img src="style/img/add/capa-necrodancer.jpg" class="img-jogo"></a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" onclick="abrir('popup-noita')"><img src="style/img/add/capa-noita.jpg" class="img-jogo"></a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" onclick="abrir('popup-loophero')"><img src="style/img/add/capa-loophero.jpg" class="img-jogo"></a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" onclick="abrir('popup-deadgods')"><img src="style/img/add/capa-deadgods.jpg" class="img-jogo"></a>
+            </div>
+        </div>
+    </div>
+    <h2 class="nome-carrossel">Clássicos</h2>
+    <div class="carrossel-jogos">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <a href="javascript:;" onclick="abrir('popup-isaac')"><img src="style/img/cls/capa-isaac.jpg" class="img-jogo"></a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" onclick="abrir('popup-spelunky')"><img src="style/img/cls/capa-spelunky.jpg" class="img-jogo"></a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" onclick="abrir('popup-gungeon')"><img src="style/img/cls/capa-gungeon.jpg" class="img-jogo"></a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" onclick="abrir('popup-roguelegacy')"><img src="style/img/cls/capa-roguelegacy.jpg" class="img-jogo"></a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" onclick="abrir('popup-risk1')"><img src="style/img/cls/capa-risk1.jpg" class="img-jogo"></a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" onclick="abrir('popup-starve')"><img src="style/img/cls/capa-starve.jpg" class="img-jogo"></a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" onclick="abrir('popup-darkest')"><img src="style/img/cls/capa-darkest.jpg" class="img-jogo"></a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" onclick="abrir('popup-herosiege')"><img src="style/img/cls/capa-herosiege.jpg" class="img-jogo"></a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" onclick="abrir('popup-rotmg')"><img src="style/img/cls/capa-rotmg.jpg" class="img-jogo"></a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Popups "Adicionados Recentemente" -->
+    <div class="popup" id="popup-morta">
+        <h2>Children of Morta</h2>
+        <p>Children of Morta é um  RPG de ação com elementos roguelike, desenvolvido pelo estúdio Dead Mage. O jogo segue a história da família Bergson, guardiã do Monte Morta, que deve defendê-lo de um mal chamado Corrupção. </p>
+        <a href="javascript:;" onclick="fechar('popup-morta')"><button role="button" class="botao">Fechar</button></a>
+    </div>
+    <div class="popup" id="popup-deadcells">
+        <h2>Dead Cells</h2>
+        <p>Dead Cells é um jogo eletrônico roguelike-metroidvania desenvolvido e publicado pela Motion Twin. No jogo, o jogador assume o papel de uma criatura parecida com um lodo que assume o controle de um cadáver em uma masmorra, através do qual eles devem lutar para sair. O jogador ganha várias armas, tesouros e outras ferramentas através da exploração dos níveis gerados proceduralmente para combater criaturas mortas-vivas dentro dele.</p>
+        <a href="javascript:;" onclick="fechar('popup-deadcells')"><button role="button" class="botao">Fechar</button></a>
+    </div>
+    <div class="popup" id="popup-spelunky2">
+        <h2>Spelunky 2</h2>
+        <p>Spelunky 2 baseia-se nos desafios únicos e aleatorizados que transformaram o jogo original num clássico de masmorras, oferecendo uma enorme aventura concebida para satisfazer os jogadores experientes ou novos.</p>
+        <a href="javascript:;" onclick="fechar('popup-spelunky2')"><button role="button" class="botao">Fechar</button></a>
+    </div>
+    <div class="popup" id="popup-spire">
+        <h2>Slay the Spire</h2>
+        <p>Slay the Spire é uma combinação de jogabilidade roguelike com um jogo de cartas de construção de baralhos. No início de uma partida, o jogador seleciona um dos três personagens predeterminados, o que estabelece uma quantidade inicial de pontos de vida, ouro, uma relíquia inicial que fornece uma habilidade única para esses personagens e um baralho inicial com cartas básicas de ataque e defesa, fazendo com que as cartas codificadas por cores em potencial adaptam àquele personagem que eles verão através da partida.</p>
+        <a href="javascript:;" onclick="fechar('popup-spire')"><button role="button" class="botao">Fechar</button></a>
+    </div>
+    <div class="popup" id="popup-risk2">
+        <h2>Risk of Rain 2</h2>
+        <p>Risk of Rain 2 é um jogo de tiro em terceira pessoa roguelike desenvolvido pela Hopoo Games e publicado pela Gearbox Publishing. Os jogadores controlam um sobrevivente que está preso em um planeta alienígena. Para sobreviver, eles navegam por vários ambientes, matando monstros e saqueando baús para coletar itens que aumentam suas capacidades ofensivas e defensivas. Com o tempo, a dificuldade do jogo aumenta, gerando criaturas mais poderosas e perigosas. O jogo suporta até quatro jogadores no modo multijogador online.</p>
+        <a href="javascript:;" onclick="fechar('popup-risk2')"><button role="button" class="botao">Fechar</button></a>
+    </div>
+    <div class="popup" id="popup-necrodancer">
+        <h2>Crypt of the Necrodancer</h2>
+        <p>Crypt of the Necrodancer é um premiado jogo rítmico no estilo "roguelike". Ande no ritmo e acompanhe a batida para bater nos inimigos! Curta a incrível trilha sonora de Danny Baranowsky, ou escolha músicas da sua própria lista de MP3s!</p>
+        <a href="javascript:;" onclick="fechar('popup-necrodancer')"><button role="button" class="botao">Fechar</button></a>
+    </div>
+    <div class="popup" id="popup-noita">
+        <h2>Noita</h2>
+        <p>Noita é um roguelite de ação e magia ambientado num mundo onde cada pixel é simulado fisicamente. Lute, explore, derreta, queime, congele e evapore usando feitiços criados por você num mundo totalmente destrutível. Explore e veja o quanto você consegue entrar em apuros!</p>
+        <a href="javascript:;" onclick="fechar('popup-noita')"><button role="button" class="botao">Fechar</button></a>
+    </div>
+    <div class="popup" id="popup-loophero">
+        <h2>Loop Hero</h2>
+        <p>Laço herói é um RPG interminável 2021 desenvolvido pelo estúdio russo Four Quarters e publicado pela Devolver Digital. O jogo se passa em um mundo gerado aleatoriamente, onde o jogador muda o mundo colocando cartas em vez de controlar diretamente um personagem.</p>
+        <a href="javascript:;" onclick="fechar('popup-loophero')"><button role="button" class="botao">Fechar</button></a>
+    </div>
+    <div class="popup" id="popup-deadgods">
+        <h2>Curse of the Dead Dogs</h2>
+        <p>Curse of the Dead Gods é um roguelike e um dungeon crawler jogado de uma perspectiva isométrica . No jogo, o jogador assume o controle de um explorador que deve navegar por três masmorras diferentes em busca de dinheiro, poder e vida eterna. As masmorras são geradas processualmente, e cada um deles está cheio de armadilhas mortais, perigos e inimigos hostis.</p>
+        <a href="javascript:;" onclick="fechar('popup-deadgods')"><button role="button" class="botao">Fechar</button></a>
+    </div>
+
+    <!-- Popups "Clássicos" -->
+    <div class="popup" id="popup-isaac">
+        <h2>The Binding of Isaac: Rebirth</h2>
+        <p>The Binding of Isaac: Rebirth é um desenvolvido por Edmund McMillen e publicado pela Nicalis. O título e o enredo do jogo foram inspirados pela história bíblica do sacrifício de Isaque. Na história, Isaac foge para o porão de sua casa depois que sua mãe recebe uma mensagem de Deus exigindo a vida de seu filho como prova da sua fé, com ele devendo lutar contra vários monstros para sobreviver.</p>
+        <a href="javascript:;" onclick="fechar('popup-isaac')"><button role="button" class="botao">Fechar</button></a>
+    </div>
+    <div class="popup" id="popup-spelunky">
+        <h2>Spelunky</h2>
+        <p>Spelunky é um jogo criado por Derek Yu. O jogador controla um espeleologista (spelunky, em inglês) que explora uma série de cavernas enquanto adquire tesouros, salva donzelas em perigo e desvia de armadilhas e uma variedade de criaturas subterrâneas.</p>
+        <a href="javascript:;" onclick="fechar('popup-spelunky')"><button role="button" class="botao">Fechar</button></a>
+    </div>
+    <div class="popup" id="popup-gungeon">
+        <h2>Enter the Gungeon</h2>
+        <p>Enter the Gungeon é um jogo bullet hell desenvolvido pela Dodge Roll e publicado pela Devolver Digital. O jogo acompanha quatro aventureiros enquanto eles descem pela Gungeon (uma masmorra de armas) para encontrar uma máquina do tempo que tem o poder de matar seus passados.</p>
+        <a href="javascript:;" onclick="fechar('popup-gungeon')"><button role="button" class="botao">Fechar</button></a>
+    </div>
+    <div class="popup" id="popup-roguelegacy">
+        <h2>Rogue Legacy</h2>
+        <p>Rogue Legacy é um desenvolvido pela Cella Door Games. O principal objetivo de Rogue Legacy é explorar o calabouço, e assim, conseguir dinheiro para expandir o castelo e derrotar os quatro chefes localizados em fases diferentes e, por fim, derrotar o chefe final que está localizado no calabouço.</p>
+        <a href="javascript:;" onclick="fechar('popup-roguelegacy')"><button role="button" class="botao">Fechar</button></a>
+    </div>
+    <div class="popup" id="popup-risk1">
+        <h2>Risk of Rain</h2>
+        <p>Risk of Rain é um videogame de plataforma de 2013 que incorporaelementos Metroidvania e roguelike , desenvolvido por uma equipe de dois alunos da Universidade de Washington sob o nome de Hopoo Games. O jogador controla o sobrevivente de um acidente de cargueiro espacial em um planeta estranho. À medida que o jogador avança através dos níveis, selecionados aleatoriamente e com alguma colocação procedimental de objetos dentro do nível, eles tentam sobreviver matando monstros e coletando itens que podem aumentar suas habilidades ofensivas e defensivas.</p>
+        <a href="javascript:;" onclick="fechar('popup-risk1')"><button role="button" class="botao">Fechar</button></a>
+    </div>
+    <div class="popup" id="popup-starve">
+        <h2>Don't Starve</h2>
+        <p>Don't Starve é um jogo de sobrevivência na selva intransigente, cheio de ciência e magia. Você joga como Wilson, um intrépido Cientista Cavalheiro que foi preso por um demônio e transportado para um misterioso mundo selvagem. Wilson deve aprender a explorar seu ambiente e seus habitantes se quiser escapar e encontrar o caminho de volta para casa.</p>
+        <a href="javascript:;" onclick="fechar('popup-starve')"><button role="button" class="botao">Fechar</button></a>
+    </div>
+    <div class="popup" id="popup-darkest">
+        <h2>Darkest Dungeon</h2>
+        <p>Darkest Dungeon é um RPG de turnos gótico desafiador sobre o estresse psicológico da aventura. Recrute, treine e lidere uma equipe de heróis imperfeitos contra horrores inimagináveis, estresse, fome, doenças e as trevas cada vez mais invasivas. Você pode manter seus heróis juntos quando toda a esperança está perdida?</p>
+        <a href="javascript:;" onclick="fechar('popup-darkest')"><button role="button" class="botao">Fechar</button></a>
+    </div>
+    <div class="popup" id="popup-herosiege">
+        <h2>Hero Siege</h2>
+        <p>O Hero Siege é um Hack 'n' Slash com elementos de masmorra e RPG. Aniquile as hordas de inimigos, aumente sua árvore de talentos, os melhores saques e explore até 7 Atos aprimorados com belos gráficos de Pixel Art!</p>
+        <a href="javascript:;" onclick="fechar('popup-herosiege')"><button role="button" class="botao">Fechar</button></a>
+    </div>
+    <div class="popup" id="popup-rotmg">
+        <h2>Realm of the Mad God</h2>
+        <p>Realm of the Mad God (em português "Reino do Deus Louco"), popularmente conhecido como RotMG é um jogo multijogador massivo online criado pela Wild Shadow e pela Spry Fox Studios. O jogo uma mistura de MMO cooperativo estilo bullet hell com gráficos pixelados ao estilo 8 bits. Os jogadores controlam personagens que foram teletransportados para o reino de Oryx (o Deus Louco do título) para virar comida de suas criaturas e abominações, que devem ser destruídas pelos jogadores.</p>
+        <a href="javascript:;" onclick="fechar('popup-rotmg')"><button role="button" class="botao">Fechar</button></a>
+    </div>
+    <script src="js/popup.js"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+</body>
+</html>
